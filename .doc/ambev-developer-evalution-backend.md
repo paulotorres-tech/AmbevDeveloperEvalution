@@ -161,5 +161,5 @@ For technical questions or discussions about this project:
 
 **Paulo Torres**  
 Senior Software Engineer  
-[LinkedIn](https://linkedin.com/in/paulotorresdev)  
-Email: your.email@example.com
+[https://linkedin.com/in/paulotorres](https://www.linkedin.com/in/paulonerytorres/)  
+[torres@paulotorres.tech](mailto:torres@paulotorres.tech)
