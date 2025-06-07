@@ -43,17 +43,6 @@ namespace Ambev.DeveloperEvaluation.Unit.Application
             // Arrange
             var command = CreateSaleHandlerTestData.GenerateValidCommand();
 
-            var validator = new CreateSaleValidator();
-            var validation = validator.Validate(command);
-            Console.WriteLine(validation.ToString());
-
-            foreach (var item in command.Items)
-            {
-                Console.WriteLine($"Item: ProductId={item.ProductId}, Qty={item.Quantity}, Price={item.UnitPrice}");
-            }
-            Console.WriteLine($"CustomerName={command.CustomerName}, BranchName={command.BranchName}");
-
-
             _saleRepositoryMock
                 .Setup(repo => repo.GetBySaleNumberAsync(command.SaleNumber, It.IsAny<CancellationToken>()))
                 .ReturnsAsync((Sale?)null); // No duplicate

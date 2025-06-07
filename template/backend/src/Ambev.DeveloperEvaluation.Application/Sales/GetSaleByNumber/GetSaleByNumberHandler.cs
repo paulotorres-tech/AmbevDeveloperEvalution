@@ -26,7 +26,7 @@ namespace Ambev.DeveloperEvaluation.Application.Sales.GetSaleByNumber
             var sale = await _saleRepository.GetBySaleNumberAsync(request.SaleNumber, cancellationToken);
 
             if (sale == null)
-                throw new KeyNotFoundException($"Sale with mumber [{request.SaleNumber}] not found.");
+                throw new KeyNotFoundException($"Sale with number [{request.SaleNumber}] not found.");
 
             return _mapper.Map<GetSaleByNumberResult>(sale);
         }
